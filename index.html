@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deepest Darkest Secrets</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <form>
+          <ol>
+            <li>
+              <div class="form-group">
+                <label for="SSID">Social Security Number</label>
+                <input id="SSID" type="number" class="form-control" placeholder="123456789">
+              </div>
+            </li>
+
+        <li>
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="genderInput" value="female" checked>
+              Female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="genderInput" value="male">
+              Male
+            </label>
+          </div>
+
+            <div class="radio">
+            <label>
+              <input type="radio" name="genderInput" value="other">
+              <span>Other: <input type="text" name="genderInput"></span>
+            </label>
+          </div>
+        </li>
+
+          <li>
+            <div class="form-group">
+            <label for="conception">Estimated date of conception:</label>
+            <input id="conceptionDate" class="form-control" type="date">
+          </div>
+        </li>
+
+      <li>
+        <div class="form-group">
+            <label for="cologne">Spritzes of cologne:</label>
+            <select class="form-control" id="cologneInput">
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7+</option>
+            </select>
+          </div>
+        </li>
+
+          <li>
+            <div class="form-group">
+            <label for="firstDate">Ideal first date locale:</label>
+            <select class="form-control" id="firstDateInput">
+              <option>My house.</option>
+              <option>WWE Royal Rumble</option>
+              <option>The mall.</option>
+              <option>The bushes with a clear view of your living room.</option>
+            </select>
+          </div>
+          </li>
+
+          <li>
+            <div class="form-group">
+              <label for="colorPanties">If worn, please select color of current undergarments by clicking on the box below:</label>
+              <input id="colorPantiesInput" class="form-control" type="color" value="#ff99ff">
+            </div>
+          </li>
+
+          <li>
+            <div class="form-group">
+              <label for="measurements">Measurements:</label>
+              <input id="measurementsInput" class="form-control" type="number">
+            </div>
+          </li>
+
+        </ol>
+
+        <button class="btn" id="mainsubmit">submit</button>
+        </form>
+
+        <div id="results">
+          <p>Social security #<span class="SSID"></span>successfully logged. Would you like to meet me at <span class="firstDate"></span>? Please wear your <span class="colorPanties"></span> underwear.Your measurements of <span class="measurements"></span> have been pre-approved.</p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+#colorPantiesInput {
+  width: 100px;
+  height: 60px;
+}
+
+button {
+ margin-left: 50px;
+ margin-top: 40px;
+}
+
+#results {
+  margin-top: 40px;
+  font-family: monospace;
+  text-align: center;
+}
